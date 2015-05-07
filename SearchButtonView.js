@@ -4,6 +4,7 @@ define([
     'backbone',
     'models/SearchButtonModel'
 ], function(_, $, Backbone, SearchButtonModel) {
+    
 
     var SearchButtonView = Backbone.View.extend({
         tagName: 'div',
