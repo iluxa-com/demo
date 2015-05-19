@@ -7,7 +7,7 @@ public class HelloWorldApp {
     private static Logger logger = Logger.getLogger(HelloWorldApp.class);
 
     public static void main(String[] args) {
-        logger.info("Hello World!");
+        logger.info("Hello World!"); //hi
     }
 }
 
