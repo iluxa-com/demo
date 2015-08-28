@@ -1,9 +1,12 @@
+
 // This is hello word sample
 
 /*
 This is code widget sample.
 */
 
+
+//some code
 
 public class HelloWorld {
   public static void main(String[] args) {
