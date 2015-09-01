@@ -4,8 +4,11 @@
 This is code widget sample.
 */
 
+import org.apache.log4j.*;
 
 public class HelloWorld {
+  private Logger logger;
+
   public static void main(String[] args) {
     //This is comment that is not in widget.
     System.out.println("Hello word!");
@@ -17,6 +20,9 @@ public class HelloWorld {
     System.out.println("It's been so lonely here.");
     System.out.println("Pam-pam.");
     System.out.println("Hey? Is there anybody out there?");
+
+
+
     //This is for error detection.
     return 0;
   }
