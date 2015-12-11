@@ -1,3 +1,5 @@
+// comment
+
 define([
     'underscore',
     'jquery',
