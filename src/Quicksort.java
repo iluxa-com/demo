@@ -22,6 +22,8 @@ public class Quicksort  {
 
     // Divide into two lists
     while (i <= j) {
+      //spaces
+      //tabs
       // If the current value from the left list is smaller then the pivot
       // element then get the next element from the left list
       while (numbers[i] < pivot) {
