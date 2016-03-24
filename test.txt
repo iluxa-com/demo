@@ -1,23 +1,6 @@
-test
+new one
+123
+qwer
 sadf
-Up-23110000
-00000
-\ русский текст
-sadf
- gem "aws-sdk", '1.29.1'
-0000000000
-111111111111
-
-
-
-gem "aws-sdk", '1.29.1'
-
-111111111111
-wqer
-
- test test test test gem "aws-sdk", '1.29.1' test test test test test
-
-
-something to cherrypick
-
-asdfaf
+йцук
+234
