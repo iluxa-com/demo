@@ -133,8 +133,8 @@
       <file leaf-file-name="br9.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test-br9/br9.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+            <state relative-caret-position="374">
+              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -751,14 +751,7 @@
       <workItem from="1449567181884" duration="175000" />
       <workItem from="1449567362653" duration="660000" />
       <workItem from="1462879290449" duration="10480000" />
-      <workItem from="1462895965190" duration="2500000" />
-    </task>
-    <task id="LOCAL-00006" summary="initial commit">
-      <created>1340204336392</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1340204336392</updated>
+      <workItem from="1462895965190" duration="3008000" />
     </task>
     <task id="LOCAL-00007" summary="change1">
       <created>1340205441911</created>
@@ -1096,11 +1089,18 @@
       <option name="project" value="LOCAL" />
       <updated>1462982029492</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="br_test commit 1">
+      <created>1462982304176</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1462982304176</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30078000" />
+    <option name="totallyTimeSpent" value="30586000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1508,8 +1508,8 @@
     <entry file="file://$PROJECT_DIR$/br-8/br8.txt" />
     <entry file="file://$PROJECT_DIR$/test-br9/br9.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+        <state relative-caret-position="374">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
           <folding />
         </state>
       </provider>
