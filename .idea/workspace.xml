@@ -25,8 +25,8 @@
   <component name="ChangeListManager">
     <list id="336dc758-5505-4f73-89ff-77ebbc4b24cc" name="Default" comment="XXX" />
     <list default="true" id="ab9aec04-4f4f-440f-8da8-0162c207bc04" name="Ignore" comment="br_test commit 1">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-br9/new-file.test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-br9/br9.txt" afterPath="$PROJECT_DIR$/test-br9/br9.txt" />
     </list>
     <ignored path="demoProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -130,11 +130,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="br9.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="br9.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test-br9/br9.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
               <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new-file.test" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test-br9/new-file.test">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -197,6 +207,7 @@
         <option value="$PROJECT_DIR$/br-8/br8.txt" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/test-br9/br9.txt" />
+        <option value="$PROJECT_DIR$/test-br9/new-file.test" />
       </list>
     </option>
   </component>
@@ -751,14 +762,7 @@
       <workItem from="1449567181884" duration="175000" />
       <workItem from="1449567362653" duration="660000" />
       <workItem from="1462879290449" duration="10480000" />
-      <workItem from="1462895965190" duration="3062000" />
-    </task>
-    <task id="LOCAL-00008" summary="change2">
-      <created>1340205670510</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1340205670510</updated>
+      <workItem from="1462895965190" duration="3678000" />
     </task>
     <task id="LOCAL-00009" summary="comments">
       <created>1369417572524</created>
@@ -1096,11 +1100,18 @@
       <option name="project" value="LOCAL" />
       <updated>1462982811758</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="br_test commit 1">
+      <created>1462982866375</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1462982866375</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30640000" />
+    <option name="totallyTimeSpent" value="31256000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1228,14 +1239,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Quicksort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Quicksort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1510,6 +1513,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-br9/new-file.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
           <folding />
         </state>
       </provider>
