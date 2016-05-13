@@ -133,8 +133,8 @@
       <file leaf-file-name="br9.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test-br9/br9.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+            <state relative-caret-position="425">
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -866,21 +866,7 @@
       <workItem from="1449567362653" duration="660000" />
       <workItem from="1462879290449" duration="10480000" />
       <workItem from="1462895965190" duration="4707000" />
-      <workItem from="1463146134870" duration="656000" />
-    </task>
-    <task id="LOCAL-00015" summary="some comments added">
-      <created>1369431783372</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1369431783372</updated>
-    </task>
-    <task id="LOCAL-00016" summary="jdk 1.7">
-      <created>1369431883707</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1369431883715</updated>
+      <workItem from="1463146134870" duration="2124000" />
     </task>
     <task id="LOCAL-00017" summary="sopaces!!">
       <created>1432124893649</created>
@@ -1211,11 +1197,25 @@
       <option name="project" value="LOCAL" />
       <updated>1463146185955</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="13-1">
+      <created>1463147998883</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1463147998883</updated>
+    </task>
+    <task id="LOCAL-00065" summary="13-1">
+      <created>1463149183535</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1463149183535</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32941000" />
+    <option name="totallyTimeSpent" value="34409000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1625,8 +1625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test-br9/br9.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        <state relative-caret-position="425">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
           <folding />
         </state>
       </provider>
