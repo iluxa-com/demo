@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="f649ae22-5cc5-42ff-84a3-4011933ac80f" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
+    <name>Performance Tests</name>
+    <description>https://upsource-perf.labs.intellij.net/</description>
+    <settings>
+        <options>
+            <option name="artifactRules" value="*.csv=&gt;./&#xA;*.log=&gt;./" />
+            <option name="buildNumberPattern" value="%dep.UpSource_Deployment_DeployLastSuccessfulBuildToPerf.build.number%" />
+            <option name="checkoutMode" value="ON_SERVER" />
+            <option name="maximumNumberOfBuilds" value="1" />
+        </options>
+        <disabled-settings>
+            <setting-ref ref="BUILD_EXT_511" />
+            <setting-ref ref="BUILD_EXT_540" />
+            <setting-ref ref="RUNNER_1450" />
+            <setting-ref ref="RUNNER_1747" />
+            <setting-ref ref="RUNNER_1794" />
+            <setting-ref ref="RUNNER_1796" />
+            <setting-ref ref="RUNNER_1797" />
+            <setting-ref ref="RUNNER_1799" />
+            <setting-ref ref="RUNNER_1800" />
+            <setting-ref ref="RUNNER_1802" />
+            <setting-ref ref="RUNNER_1803" />
+            <setting-ref ref="RUNNER_2079" />
+            <setting-ref ref="performance_test_analyzer" />
+        </disabled-settings>
+        <parameters>
+            <param name="env.ANT_OPTS" value="-Xmx1024m -XX:+HeapDumpOnOutOfMemoryError -Djsse.enableSNIExtension=false" />
+            <param name="env._JAVA_OPTS" value="-Xmx1024m -Djsse.enableSNIExtension=false" />
+            <param name="result.log.file" value="results.csv" />
+            <param name="test.timeout" value="180" />
+            <param name="tests.delay" value="0" />
+            <param name="tests.duration" value="60" />
+            <param name="tests.project.id" value="upsource" />
+            <param name="tests.thread.ramp.up" value="0" />
+            <param name="upsource.test.login" value="upsource-test-user-noreply@jetbrains.com" />
+            <param name="upsource.test.password" value="h4KvbQm8M3Htf37fr0txnL0oTpkPkB" />
+            <param name="upsource.test.url" value="https://upsource-perf.labs.intellij.net" />
+            <param name="yourkit.agent.path" value="-agentpath:/home/builduser/yourkit/yourkit/bin/linux-x86-64/libyjpagent.so" />
+            <param name="yourkit.startup.options" value="=onexit=snapshot,usedmem=80,dir=%teamcity.build.checkoutDir%,logdir=%teamcity.build.checkoutDir%/yourkit" />
+        </parameters>
+        <build-runners>
+            <runner id="RUNNER_1322" name="prepared actions" type="Ant">
+                <parameters>
+                    <param name="build-file"><![CDATA[<?xml version="1.0"?>
+<project name="performance.tests" default="prepared.tests">
+
+  <target name="prepared.tests">
+
+    <path id="classpath">
+      <fileset dir="build">
+        <include name="lib/*.jar" />
+        <include name="*.jar" />
+      </fileset>
+    </path>
+
+    <javac destdir="build" classpathref="classpath">
+      <src path="src"/>
+    </javac>
+
+    <touch file="error.log"/>
+  </target>
+</project>]]></param>
+                    <param name="build-file-path" value="run.xml" />
+                    <param name="target" value="prepared.tests" />
+                    <param name="target.jdk.home" value="%env.JDK_18%" />
+                    <param name="teamcity.coverage.emma.include.source" value="true" />
+                    <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+                    <param name="teamcity.coverage.idea.includePatterns" value="*" />
+                    <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+                    <param name="teamcity.step.mode" value="default" />
+                </parameters>
+            </runner>
+            <runner id="RUNNER_1804" name="Drop DB" type="Ant">
+                <parameters>
+                    <param name="build-file-path" value="run.xml" />
+                    <param name="jvmArgs" value="-Djsse.enableSNIExtension=false" />
+                    <param name="runnerArgs" value="-DtestsFile=revision.tests.config -Durl=%upsource.test.url% -Dlogin=%upsource.test.login% -Dpassword=%upsource.test.password% -DthreadsCount=10 -DthreadRampUp=%tests.thread.ramp.up% -DtestDuration=%tests.duration% -DtestDelay=%tests.delay% -DtestTimeout=%test.timeout% -Dproject_id=%tests.project.id% -Djsse.enableSNIExtension=false" />
+                    <param name="target" value="test.dropDB" />
+                    <param name="target.jdk.home" value="%env.JDK_18%" />
+                    <param name="teamcity.coverage.emma.include.source" value="true" />
+                    <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+                    <param name="teamcity.coverage.idea.includePatterns" value="*" />
+                    <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+                    <param name="teamcity.step.mode" value="default" />
+                </parameters>
+            </runner>
+            <runner id="RUNNER_68" name="10 threads: projects &amp; revision" type="Ant">
+                <parameters>
+                    <param name="build-file-path" value="run.xml" />
+                    <param name="jvmArgs" value="-Djsse.enableSNIExtension=false" />
+                    <param name="runnerArgs" value="-DresultsFile=10threads_revisions_result.csv -DtestsFile=revision.tests.config -Durl=%upsource.test.url% -Dlogin=%upsource.test.login% -Dpassword=%upsource.test.password% -DthreadsCount=10 -DthreadRampUp=%tests.thread.ramp.up% -DtestDuration=%tests.duration% -DtestDelay=%tests.delay% -DtestTimeout=%test.timeout% -Dproject_id=%tests.project.id% -Djsse.enableSNIExtension=false" />
+                    <param name="target.jdk.home" value="%env.JDK_18%" />
+                    <param name="teamcity.coverage.emma.include.source" value="true" />
+                    <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+                    <param name="teamcity.coverage.idea.includePatterns" value="*" />
+                    <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+                    <param name="teamcity.step.mode" value="execute_if_failed" />
+                </parameters>
+            </runner>
+            <runner id="RUNNER_1798" name="10 threads: file &amp; markup tests" type="Ant">
+                <parameters>
+                    <param name="build-file-path" value="run.xml" />
+                    <param name="jvmArgs" value="-Djsse.enableSNIExtension=false" />
+                    <param name="runnerArgs" value="-DresultsFile=10threads_file_results.csv -DtestsFile=files.tests.config -Durl=%upsource.test.url% -Dlogin=%upsource.test.login% -Dpassword=%upsource.test.password% -DthreadsCount=10 -DthreadRampUp=%tests.thread.ramp.up% -DtestDuration=%tests.duration% -DtestDelay=%tests.delay% -DtestTimeout=%test.timeout% -Dproject_id=%tests.project.id% -Djsse.enableSNIExtension=false" />
+                    <param name="target.jdk.home" value="%env.JDK_18%" />
+                    <param name="teamcity.coverage.emma.include.source" value="true" />
+                    <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+                    <param name="teamcity.coverage.idea.includePatterns" value="*" />
+                    <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+                    <param name="teamcity.step.mode" value="execute_if_failed" />
+                </parameters>
+            </runner>
+            <runner id="RUNNER_1795" name="10 threads: comment, discussion, search tests" type="Ant">
+                <parameters>
+                    <param name="build-file-path" value="run.xml" />
+                    <param name="jvmArgs" value="-Djsse.enableSNIExtension=false" />
+                    <param name="runnerArgs" value="-DresultsFile=10threads_comments_results.csv -DtestsFile=comments.tests.config -Durl=%upsource.test.url% -Dlogin=%upsource.test.login% -Dpassword=%upsource.test.password% -DthreadsCount=10 -DthreadRampUp=%tests.thread.ramp.up% -DtestDuration=%tests.duration% -DtestDelay=%tests.delay% -DtestTimeout=%test.timeout% -Dproject_id=%tests.project.id% -Djsse.enableSNIExtension=false" />
+                    <param name="target.jdk.home" value="%env.JDK_18%" />
+                    <param name="teamcity.coverage.emma.include.source" value="true" />
+                    <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+                    <param name="teamcity.coverage.idea.includePatterns" value="*" />
+                    <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+                    <param name="teamcity.step.mode" value="execute_if_failed" />
+                </parameters>
+            </runner>
+            <runner id="RUNNER_1801" name="10 threads: review tests" type="Ant">
+                <parameters>
+                    <param name="build-file-path" value="run.xml" />
+                    <param name="jvmArgs" value="-Djsse.enableSNIExtension=false" />
+                    <param name="runnerArgs" value="-DresultsFile=10threads_reviews_results.csv -DtestsFile=review.tests.config -Durl=%upsource.test.url% -Dlogin=%upsource.test.login% -Dpassword=%upsource.test.password% -DthreadsCount=10 -DthreadRampUp=%tests.thread.ramp.up% -DtestDuration=%tests.duration% -DtestDelay=%tests.delay% -DtestTimeout=%test.timeout% -Dproject_id=%tests.project.id% -Djsse.enableSNIExtension=false" />
+                    <param name="target.jdk.home" value="%env.JDK_18%" />
+                    <param name="teamcity.coverage.emma.include.source" value="true" />
+                    <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+                    <param name="teamcity.coverage.idea.includePatterns" value="*" />
+                    <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+                    <param name="teamcity.step.mode" value="execute_if_failed" />
+                </parameters>
+            </runner>
+            <runner id="RUNNER_2079" name="Drop DB (before 50 threads)" type="Ant">
+                <parameters>
+                    <param name="build-file"><![CDATA[<?xml version="1.0"?>
+<project name="performance.tests" default="drop_db">
+
+  <target name="test.connection">
+    <waitfor maxwait="20" maxwaitunit="minute" checkevery="5" checkeveryunit="second" timeoutproperty="exceed_timeout">
+      <scriptcondition language="javascript" value="false">
+        var p = java.lang.Runtime.getRuntime().exec("curl -k "curl -k https://upsource-perf.labs.intellij.net/~rpc/getAllProjects"");
+        p.waitFor();
+        var reader = new java.io.BufferedReader(new java.io.InputStreamReader(p.getInputStream()));
+        var line = reader.readLine();
+        var isReady = line != null &amp;&amp; line.trim().startsWith("{") &amp;&amp; line.contains("result");
+
+        self.log("Server available: " +isReady);
+        self.setValue(isReady);
+      </scriptcondition>
+    </waitfor>
+    <fail if="exceed_timeout">
+      ##teamcity[buildStatus status='FAILURE' text='Failed to connect to ${url} during 20 minutes']
+    </fail>
+  </target>
+
+  <target name="drop_db" depends="test.connection">
+
+    <path id="classpath">
+      <fileset dir="build">
+        <include name="lib/*.jar" />
+        <include name="*.jar" />
+      </fileset>
+    </path>
+    <java classname="load_generator.DropDatabase" failonerror="true"
+          error="error.log">
+      <arg value="url=${url}"/>
+      <arg value="login=${login}"/>
+      <arg value="password=${password}"/>
+      <classpath>
+        <path refid="classpath"/>
+        <path path="build/"/>
+      </classpath>
+    </java>
+  </target>
+</project>]]></param>
+                    <param name="build-file-path" value="build.xml" />
+                    <param name="runnerArgs" value="-Durl=%upsource.test.url% -Dlogin=%upsource.test.login% -Dpassword=%upsource.test.password% -Djsse.enableSNIExtension=false" />
+                    <param name="target.jdk.home" value="%env.JDK_18%" />
+                    <param name="teamcity.coverage.emma.include.source" value="true" />
+                    <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+                    <param name="teamcity.coverage.idea.includePatterns" value="*" />
+                    <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+                    <param name="teamcity.step.mode" value="execute_if_failed" />
+                    <param name="use-custom-build-file" value="true" />
+                </parameters>
+            </runner>
+            <runner id="RUNNER_1747" name="50 threads: projects &amp; revision" type="Ant">
+                <parameters>
+                    <param name="build-file-path" value="run.xml" />
+                    <param name="runnerArgs" value="-DresultsFile=50threads_revisions_result.csv -DtestsFile=revision.tests.config -Durl=%upsource.test.url% -Dlogin=%upsource.test.login% -Dpassword=%upsource.test.password% -DthreadsCount=50 -DthreadRampUp=%tests.thread.ramp.up% -DtestDuration=%tests.duration% -DtestDelay=%tests.delay% -DtestTimeout=%test.timeout% -Dproject_id=%tests.project.id%" />
+                    <param name="target.jdk.home" value="%env.JDK_18%" />
+                    <param name="teamcity.coverage.emma.include.source" value="true" />
+                    <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+                    <param name="teamcity.coverage.idea.includePatterns" value="*" />
+                    <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+                    <param name="teamcity.step.mode" value="execute_if_failed" />
+                </parameters>
+            </runner>
+            <runner id="RUNNER_1799" name="50 threads: file &amp; markup tests" type="Ant">
+                <parameters>
+                    <param name="build-file-path" value="run.xml" />
+                    <param name="runnerArgs" value="-DresultsFile=50threads_file_results.csv -DtestsFile=files.tests.config -Durl=%upsource.test.url% -Dlogin=%upsource.test.login% -Dpassword=%upsource.test.password% -DthreadsCount=50 -DthreadRampUp=%tests.thread.ramp.up% -DtestDuration=%tests.duration% -DtestDelay=%tests.delay% -DtestTimeout=%test.timeout% -Dproject_id=%tests.project.id%" />
+                    <param name="target.jdk.home" value="%env.JDK_18%" />
+                    <param name="teamcity.coverage.emma.include.source" value="true" />
+                    <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+                    <param name="teamcity.coverage.idea.includePatterns" value="*" />
+                    <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+                    <param name="teamcity.step.mode" value="execute_if_failed" />
+                </parameters>
+            </runner>
+            <runner id="RUNNER_1796" name="50 threads: comment, discussion, search tests" type="Ant">
+                <parameters>
+                    <param name="build-file-path" value="run.xml" />
+                    <param name="runnerArgs" value="-DresultsFile=%result.log.file% -DtestsFile=comments.tests.config -Durl=%upsource.test.url% -Dlogin=%upsource.test.login% -Dpassword=%upsource.test.password% -DthreadsCount=50 -DthreadRampUp=%tests.thread.ramp.up% -DtestDuration=%tests.duration% -DtestDelay=%tests.delay% -DtestTimeout=%test.timeout% -Dproject_id=%tests.project.id%" />
+                    <param name="target.jdk.home" value="%env.JDK_18%" />
+                    <param name="teamcity.coverage.emma.include.source" value="true" />
+                    <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+                    <param name="teamcity.coverage.idea.includePatterns" value="*" />
+                    <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+                    <param name="teamcity.step.mode" value="execute_if_failed" />
+                </parameters>
+            </runner>
+            <runner id="RUNNER_1802" name="50 threads: review tests" type="Ant">
+                <parameters>
+                    <param name="build-file-path" value="run.xml" />
+                    <param name="runnerArgs" value="-DresultsFile=%result.log.file% -DtestsFile=review.tests.config -Durl=%upsource.test.url% -Dlogin=%upsource.test.login% -Dpassword=%upsource.test.password% -DthreadsCount=50 -DthreadRampUp=%tests.thread.ramp.up% -DtestDuration=%tests.duration% -DtestDelay=%tests.delay% -DtestTimeout=%test.timeout% -Dproject_id=%tests.project.id%" />
+                    <param name="target.jdk.home" value="%env.JDK_18%" />
+                    <param name="teamcity.coverage.emma.include.source" value="true" />
+                    <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+                    <param name="teamcity.coverage.idea.includePatterns" value="*" />
+                    <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+                    <param name="teamcity.step.mode" value="execute_if_failed" />
+                </parameters>
+            </runner>
+            <runner id="RUNNER_1450" name="Drop DB (before 100 threads)" type="Ant">
+                <parameters>
+                    <param name="build-file"><![CDATA[<?xml version="1.0"?>
+<project name="performance.tests" default="drop_db">
+
+  <target name="test.connection">
+    <waitfor maxwait="20" maxwaitunit="minute" checkevery="5" checkeveryunit="second" timeoutproperty="exceed_timeout">
+      <scriptcondition language="javascript" value="false">
+        var p = java.lang.Runtime.getRuntime().exec("curl -k https://upsource-dev.labs.intellij.net/~rpc/getAllProjects");
+        p.waitFor();
+        var reader = new java.io.BufferedReader(new java.io.InputStreamReader(p.getInputStream()));
+        var line = reader.readLine();
+        var isReady = line != null &amp;&amp; line.trim().startsWith("{") &amp;&amp; line.contains("result");
+
+        self.log("Server available: " +isReady);
+        self.setValue(isReady);
+      </scriptcondition>
+    </waitfor>
+    <fail if="exceed_timeout">
+      ##teamcity[buildStatus status='FAILURE' text='Failed to connect to ${url} during 20 minutes']
+    </fail>
+  </target>
+
+  <target name="drop_db" depends="test.connection">
+
+    <path id="classpath">
+      <fileset dir="build">
+        <include name="lib/*.jar" />
+        <include name="*.jar" />
+      </fileset>
+    </path>
+    <java classname="load_generator.DropDB" failonerror="true"
+          error="error.log">
+      <arg value="url=${url}"/>
+      <arg value="login=${login}"/>
+      <arg value="password=${password}"/>
+      <classpath>
+        <path refid="classpath"/>
+        <path path="build/"/>
+      </classpath>
+    </java>
+  </target>
+</project>]]></param>
+                    <param name="build-file-path" value="build.xml" />
+                    <param name="runnerArgs" value="-Durl=%upsource.test.url% -Dlogin=%upsource.test.login% -Dpassword=%upsource.test.password%" />
+                    <param name="target.jdk.home" value="%env.JDK_17%" />
+                    <param name="teamcity.coverage.emma.include.source" value="true" />
+                    <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+                    <param name="teamcity.coverage.idea.includePatterns" value="*" />
+                    <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+                    <param name="teamcity.step.mode" value="execute_if_failed" />
+                    <param name="use-custom-build-file" value="true" />
+                </parameters>
+            </runner>
+            <runner id="RUNNER_1794" name="100 threads: projects &amp; revision" type="Ant">
+                <parameters>
+                    <param name="build-file-path" value="run.xml" />
+                    <param name="runnerArgs" value="-DresultsFile=%result.log.file% -DtestsFile=revision.tests.config -Durl=%upsource.test.url% -Dlogin=%upsource.test.login% -Dpassword=%upsource.test.password% -DthreadsCount=100 -DthreadRampUp=%tests.thread.ramp.up% -DtestDuration=%tests.duration% -DtestDelay=%tests.delay% -DtestTimeout=%test.timeout% -Dproject_id=%tests.project.id%" />
+                    <param name="target.jdk.home" value="%env.JDK_17%" />
+                    <param name="teamcity.coverage.emma.include.source" value="true" />
+                    <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+                    <param name="teamcity.coverage.idea.includePatterns" value="*" />
+                    <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+                    <param name="teamcity.step.mode" value="execute_if_failed" />
+                </parameters>
+            </runner>
+            <runner id="RUNNER_1800" name="100 threads: file &amp; markup tests" type="Ant">
+                <parameters>
+                    <param name="build-file-path" value="run.xml" />
+                    <param name="runnerArgs" value="-DresultsFile=%result.log.file% -DtestsFile=files.tests.config -Durl=%upsource.test.url% -Dlogin=%upsource.test.login% -Dpassword=%upsource.test.password% -DthreadsCount=100 -DthreadRampUp=%tests.thread.ramp.up% -DtestDuration=%tests.duration% -DtestDelay=%tests.delay% -DtestTimeout=%test.timeout% -Dproject_id=%tests.project.id%" />
+                    <param name="target.jdk.home" value="%env.JDK_17%" />
+                    <param name="teamcity.coverage.emma.include.source" value="true" />
+                    <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+                    <param name="teamcity.coverage.idea.includePatterns" value="*" />
+                    <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+                    <param name="teamcity.step.mode" value="execute_if_failed" />
+                </parameters>
+            </runner>
+            <runner id="RUNNER_1797" name="100 threads: comment, discussion, search tests" type="Ant">
+                <parameters>
+                    <param name="build-file-path" value="run.xml" />
+                    <param name="runnerArgs" value="-DresultsFile=%result.log.file% -DtestsFile=comments.tests.config -Durl=%upsource.test.url% -Dlogin=%upsource.test.login% -Dpassword=%upsource.test.password% -DthreadsCount=100 -DthreadRampUp=%tests.thread.ramp.up% -DtestDuration=%tests.duration% -DtestDelay=%tests.delay% -DtestTimeout=%test.timeout% -Dproject_id=%tests.project.id%" />
+                    <param name="target.jdk.home" value="%env.JDK_17%" />
+                    <param name="teamcity.coverage.emma.include.source" value="true" />
+                    <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+                    <param name="teamcity.coverage.idea.includePatterns" value="*" />
+                    <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+                    <param name="teamcity.step.mode" value="execute_if_failed" />
+                </parameters>
+            </runner>
+            <runner id="RUNNER_1803" name="100 threads: review tests" type="Ant">
+                <parameters>
+                    <param name="build-file-path" value="run.xml" />
+                    <param name="runnerArgs" value="-DresultsFile=%result.log.file% -DtestsFile=review.tests.config -Durl=%upsource.test.url% -Dlogin=%upsource.test.login% -Dpassword=%upsource.test.password% -DthreadsCount=100 -DthreadRampUp=%tests.thread.ramp.up% -DtestDuration=%tests.duration% -DtestDelay=%tests.delay% -DtestTimeout=%test.timeout% -Dproject_id=%tests.project.id%" />
+                    <param name="target.jdk.home" value="%env.JDK_17%" />
+                    <param name="teamcity.coverage.emma.include.source" value="true" />
+                    <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+                    <param name="teamcity.coverage.idea.includePatterns" value="*" />
+                    <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+                    <param name="teamcity.step.mode" value="execute_if_failed" />
+                </parameters>
+            </runner>
+        </build-runners>
+        <vcs-settings>
+            <vcs-entry-ref root-id="Upsource">
+                <checkout-rule rule="-:." />
+                <checkout-rule rule="+:test-perf-java=&gt;." />
+                <checkout-rule rule="+:lib/socketio-java-client =&gt; build/lib" />
+                <checkout-rule rule="+:test-perf-java/lib=&gt;build/lib" />
+            </vcs-entry-ref>
+        </vcs-settings>
+        <requirements>
+            <no-less-than id="teamcity.agent.hardware.memorySizeMb" name="teamcity.agent.hardware.memorySizeMb" value="7950" />
+            <contains id="teamcity.agent.name" name="teamcity.agent.name" value="upsource-" />
+        </requirements>
+        <build-triggers>
+            <build-trigger id="TRIGGER_450" type="schedulingTrigger">
+                <parameters>
+                    <param name="branchFilter" value="+:&lt;default&gt;" />
+                    <param name="cronExpression_dm" value="*" />
+                    <param name="cronExpression_dw" value="?" />
+                    <param name="cronExpression_hour" value="*" />
+                    <param name="cronExpression_min" value="0" />
+                    <param name="cronExpression_month" value="*" />
+                    <param name="cronExpression_sec" value="0" />
+                    <param name="cronExpression_year" value="*" />
+                    <param name="dayOfWeek" value="Sunday" />
+                    <param name="hour" value="4" />
+                    <param name="minute" value="0" />
+                    <param name="revisionRule" value="lastFinished" />
+                    <param name="schedulingPolicy" value="daily" />
+                    <param name="timezone" value="SERVER" />
+                </parameters>
+            </build-trigger>
+        </build-triggers>
+        <build-extensions>
+            <extension id="BUILD_EXT_204" type="performance_test_analyzer">
+                <parameters>
+                    <param name="perfTest.agg.90line" value="true" />
+                    <param name="perfTest.agg.assert" value="true" />
+                    <param name="perfTest.agg.avg" value="true" />
+                    <param name="perfTest.agg.file" value="10threads_file_results.csv" />
+                    <param name="perfTest.agg.max" value="true" />
+                    <param name="perfTest.agg.min" value="true" />
+                    <param name="perfTest.agg.ref.90line" value="true" />
+                    <param name="perfTest.agg.total" value="true" />
+                    <param name="perfTest.check.ref.data" value="true" />
+                    <param name="perfTest.ref.buildCount" value="4" />
+                    <param name="perfTest.ref.type.builds" value="true" />
+                    <param name="perfTest.ref.variation" value="1" />
+                    <param name="perfTest.ref.warn.variation" value="0.05" />
+                </parameters>
+            </extension>
+            <extension id="BUILD_EXT_301" type="performance_test_analyzer">
+                <parameters>
+                    <param name="perfTest.agg.90line" value="true" />
+                    <param name="perfTest.agg.assert" value="true" />
+                    <param name="perfTest.agg.avg" value="true" />
+                    <param name="perfTest.agg.file" value="10threads_reviews_results.csv" />
+                    <param name="perfTest.agg.max" value="true" />
+                    <param name="perfTest.agg.min" value="true" />
+                    <param name="perfTest.agg.ref.90line" value="true" />
+                    <param name="perfTest.agg.total" value="true" />
+                    <param name="perfTest.check.ref.data" value="true" />
+                    <param name="perfTest.ref.buildCount" value="4" />
+                    <param name="perfTest.ref.type.builds" value="true" />
+                    <param name="perfTest.ref.variation" value="1" />
+                    <param name="perfTest.ref.warn.variation" value="0.05" />
+                </parameters>
+            </extension>
+            <extension id="BUILD_EXT_511" type="performance_test_analyzer">
+                <parameters>
+                    <param name="perfTest.agg.90line" value="true" />
+                    <param name="perfTest.agg.assert" value="true" />
+                    <param name="perfTest.agg.avg" value="true" />
+                    <param name="perfTest.agg.file" value="50threads_file_results.csv" />
+                    <param name="perfTest.agg.max" value="true" />
+                    <param name="perfTest.agg.min" value="true" />
+                    <param name="perfTest.agg.respCode" value="true" />
+                    <param name="perfTest.agg.testGroups" value="true" />
+                </parameters>
+            </extension>
+            <extension id="BUILD_EXT_512" type="performance_test_analyzer">
+                <parameters>
+                    <param name="perfTest.agg.90line" value="true" />
+                    <param name="perfTest.agg.assert" value="true" />
+                    <param name="perfTest.agg.avg" value="true" />
+                    <param name="perfTest.agg.file" value="10threads_revisions_result.csv" />
+                    <param name="perfTest.agg.max" value="true" />
+                    <param name="perfTest.agg.min" value="true" />
+                    <param name="perfTest.agg.ref.90line" value="true" />
+                    <param name="perfTest.agg.total" value="true" />
+                    <param name="perfTest.check.ref.data" value="true" />
+                    <param name="perfTest.ref.buildCount" value="4" />
+                    <param name="perfTest.ref.type.builds" value="true" />
+                    <param name="perfTest.ref.variation" value="1" />
+                    <param name="perfTest.ref.warn.variation" value="0.05" />
+                </parameters>
+            </extension>
+            <extension id="BUILD_EXT_540" type="performance_test_analyzer">
+                <parameters>
+                    <param name="perfTest.agg.90line" value="true" />
+                    <param name="perfTest.agg.assert" value="true" />
+                    <param name="perfTest.agg.avg" value="true" />
+                    <param name="perfTest.agg.file" value="50threads_revisions_result.csv" />
+                    <param name="perfTest.agg.max" value="true" />
+                    <param name="perfTest.agg.min" value="true" />
+                    <param name="perfTest.agg.respCode" value="true" />
+                    <param name="perfTest.agg.testGroups" value="true" />
+                </parameters>
+            </extension>
+            <extension id="BUILD_EXT_814" type="performance_test_analyzer">
+                <parameters>
+                    <param name="perfTest.agg.90line" value="true" />
+                    <param name="perfTest.agg.assert" value="true" />
+                    <param name="perfTest.agg.avg" value="true" />
+                    <param name="perfTest.agg.file" value="10threads_comments_results.csv" />
+                    <param name="perfTest.agg.max" value="true" />
+                    <param name="perfTest.agg.min" value="true" />
+                    <param name="perfTest.agg.ref.90line" value="true" />
+                    <param name="perfTest.agg.total" value="true" />
+                    <param name="perfTest.check.ref.data" value="true" />
+                    <param name="perfTest.ref.buildCount" value="4" />
+                    <param name="perfTest.ref.type.builds" value="true" />
+                    <param name="perfTest.ref.variation" value="1" />
+                    <param name="perfTest.ref.warn.variation" value="0.05" />
+                </parameters>
+            </extension>
+            <extension id="perfmon" type="perfmon">
+                <parameters />
+            </extension>
+            <extension id="performance_test_analyzer" type="performance_test_analyzer">
+                <parameters>
+                    <param name="perfTest.agg.90line" value="true" />
+                    <param name="perfTest.agg.assert" value="true" />
+                    <param name="perfTest.agg.avg" value="true" />
+                    <param name="perfTest.agg.file" value="%result.log.file%" />
+                    <param name="perfTest.agg.max" value="true" />
+                    <param name="perfTest.agg.min" value="true" />
+                    <param name="perfTest.agg.respCode" value="true" />
+                    <param name="perfTest.agg.testGroups" value="true" />
+                </parameters>
+            </extension>
+            <extension id="swabra" type="swabra">
+                <parameters>
+                    <param name="swabra.enabled" value="swabra.after.build" />
+                    <param name="swabra.processes" value="kill" />
+                    <param name="swabra.strict" value="true" />
+                    <param name="swabra.verbose" value="true" />
+                </parameters>
+            </extension>
+        </build-extensions>
+        <artifact-dependencies>
+            <dependency id="ARTIFACT_DEPENDENCY_4496" sourceBuildTypeId="UpSource_Deployment_DeployLastSuccessfulBuildToPerf" cleanDestination="false">
+                <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+                <artifact sourcePath="+:upsource-client.jar=&gt;build&#xD;&#xA;+:deploy.zip!lib/**=&gt;build/lib" />
+            </dependency>
+            <dependency id="ARTIFACT_DEPENDENCY_4497" sourceBuildTypeId="UpSource_PerformanceTests_PrepareTestDataForPerformanceTests" cleanDestination="false">
+                <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" branch="&lt;default&gt;" />
+                <artifact sourcePath="+:data.zip!/**=&gt;data" />
+            </dependency>
+        </artifact-dependencies>
+        <cleanup>
+            <policy type="days" cleanup-level="EVERYTHING">
+                <parameters>
+                    <param name="keepDays.count" value="90" />
+                </parameters>
+            </policy>
+            <policy type="days" cleanup-level="HISTORY_ENTRY">
+                <parameters>
+                    <param name="keepDays.count" value="90" />
+                </parameters>
+            </policy>
+            <policy type="days" cleanup-level="ARTIFACTS">
+                <parameters>
+                    <param name="keepDays.count" value="20" />
+                </parameters>
+            </policy>
+        </cleanup>
+    </settings>
+</build-type>
+
