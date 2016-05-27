@@ -24,8 +24,9 @@
   </component>
   <component name="ChangeListManager">
     <list id="336dc758-5505-4f73-89ff-77ebbc4b24cc" name="Default" comment="XXX" />
-    <list default="true" id="ab9aec04-4f4f-440f-8da8-0162c207bc04" name="Ignore" comment="19-12">
+    <list default="true" id="ab9aec04-4f4f-440f-8da8-0162c207bc04" name="Ignore" comment="&#10;213&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.WDF" afterPath="$PROJECT_DIR$/test.WDF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/русский файл" afterPath="$PROJECT_DIR$/русский файл" />
     </list>
     <ignored path="demoProject.iws" />
@@ -133,8 +134,8 @@
       <file leaf-file-name="русский файл" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/русский файл">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+            <state relative-caret-position="187">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -806,14 +807,7 @@
       <workItem from="1464191282176" duration="719000" />
       <workItem from="1464252040024" duration="4268000" />
       <workItem from="1464350252134" duration="2063000" />
-      <workItem from="1464365329278" duration="223000" />
-    </task>
-    <task id="LOCAL-00027" summary="br_test commit 1">
-      <created>1462881696734</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1462881696734</updated>
+      <workItem from="1464365329278" duration="413000" />
     </task>
     <task id="LOCAL-00028" summary="br_test commit 1">
       <created>1462882110315</created>
@@ -1151,11 +1145,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464365526850</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="&#10;213&#10;">
+      <created>1464365559447</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1464365559447</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50300000" />
+    <option name="totallyTimeSpent" value="50490000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1250,7 +1251,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="change2" />
     <MESSAGE value="comments" />
     <MESSAGE value="10 syms" />
     <MESSAGE value="XXX" />
@@ -1275,7 +1275,8 @@
     <MESSAGE value="review from commit dialog11" />
     <MESSAGE value="19-10" />
     <MESSAGE value="19-12" />
-    <option name="LAST_COMMIT_MESSAGE" value="19-12" />
+    <MESSAGE value="&#10;213&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;213&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1525,8 +1526,8 @@
     <entry file="file://$PROJECT_DIR$/test.xml" />
     <entry file="file://$PROJECT_DIR$/русский файл">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        <state relative-caret-position="187">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
           <folding />
         </state>
       </provider>
