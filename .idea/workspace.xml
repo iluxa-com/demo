@@ -24,7 +24,7 @@
   </component>
   <component name="ChangeListManager">
     <list id="336dc758-5505-4f73-89ff-77ebbc4b24cc" name="Default" comment="XXX" />
-    <list default="true" id="ab9aec04-4f4f-440f-8da8-0162c207bc04" name="Ignore" comment="draft-test 4">
+    <list default="true" id="ab9aec04-4f4f-440f-8da8-0162c207bc04" name="Ignore" comment="draft-test 5">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new-draft-test.txt" afterPath="$PROJECT_DIR$/new-draft-test.txt" />
     </list>
@@ -140,8 +140,8 @@
       <file leaf-file-name="new-draft-test.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/new-draft-test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="85">
+              <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -199,6 +199,18 @@
             </revision-list>
             <branch-list>
               <branch name="new-drafts1" local-rev-id="e1d619794098 1480680427000" />
+            </branch-list>
+          </uncommitted-revisions-part>
+          <discussions-list />
+        </review>
+        <review id="4" title="draft-test 5" state="OPEN" branch="false">
+          <participant-list />
+          <uncommitted-revisions-part>
+            <revision-list>
+              <revision revisionNumber="2bc2d524f89d87e6e15fda15e1238834f27958e1" author="iluxa-com" fullAuthorString="iluxa-com &lt;ilya.komolkin@jetbrains.com&gt;" commitTime="1480680459000" authorTime="1480680459000" commitMessage="draft-test 5" vcsRootUrl="file://$PROJECT_DIR$" />
+            </revision-list>
+            <branch-list>
+              <branch name="new-drafts1" local-rev-id="2bc2d524f89d 1480680459000" />
             </branch-list>
           </uncommitted-revisions-part>
           <discussions-list />
@@ -756,7 +768,7 @@
       <workItem from="1449566864518" duration="298000" />
       <workItem from="1449567181884" duration="175000" />
       <workItem from="1449567362653" duration="660000" />
-      <workItem from="1480680074299" duration="364000" />
+      <workItem from="1480680074299" duration="385000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1339172743829</created>
@@ -961,11 +973,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480680427277</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="draft-test 5">
+      <created>1480680459187</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1480680459187</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17462000" />
+    <option name="totallyTimeSpent" value="17483000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1108,7 +1127,8 @@
     <MESSAGE value="draft-test 1" />
     <MESSAGE value="draft-test 2" />
     <MESSAGE value="draft-test 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="draft-test 4" />
+    <MESSAGE value="draft-test 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="draft-test 5" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1498,8 +1518,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new-draft-test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        <state relative-caret-position="85">
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding />
         </state>
       </provider>
