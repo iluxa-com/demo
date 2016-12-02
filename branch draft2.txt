@@ -1,0 +1,8 @@
+Anchipolevsky, This is a temporary fix for the issue with cassandra restarts.
+The '7386db34' commit introduced a creation of RevisionInfoBean without setting anything to parentRevisions (RevisionInfoTable).
+For some reason it stops cassandra from successful restart.
+Could you please test how it works now?
+
+I will investigate a root reason but it looks like it's a one more bug in Cassandra.
+
+fsad
