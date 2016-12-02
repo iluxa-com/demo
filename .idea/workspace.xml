@@ -24,9 +24,9 @@
   </component>
   <component name="ChangeListManager">
     <list id="336dc758-5505-4f73-89ff-77ebbc4b24cc" name="Default" comment="XXX" />
-    <list default="true" id="ab9aec04-4f4f-440f-8da8-0162c207bc04" name="Ignore" comment="2draft-test 1 with branch review and commentssad">
+    <list default="true" id="ab9aec04-4f4f-440f-8da8-0162c207bc04" name="Ignore" comment="draft4 -1">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/draft-test5.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/branch draft2.txt" afterPath="$PROJECT_DIR$/branch draft2.txt" />
     </list>
     <ignored path="demoProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -147,11 +147,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="branch draft2.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="branch draft2.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/branch draft2.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
               <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="draft-test5.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/draft-test5.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -186,7 +196,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="branch-draft2" />
+        <entry key="$PROJECT_DIR$" value="draft-test4" />
       </map>
     </option>
   </component>
@@ -207,7 +217,9 @@
         <option value="$PROJECT_DIR$/123" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/new-draft-test.txt" />
+        <option value="$PROJECT_DIR$/draft4.txt" />
         <option value="$PROJECT_DIR$/branch draft2.txt" />
+        <option value="$PROJECT_DIR$/draft-test5.txt" />
       </list>
     </option>
   </component>
@@ -738,7 +750,7 @@
       <workItem from="1449567362653" duration="660000" />
       <workItem from="1480680074299" duration="4744000" />
       <workItem from="1480687132878" duration="32000" />
-      <workItem from="1480687259950" duration="748000" />
+      <workItem from="1480687259950" duration="2407000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1339172743829</created>
@@ -999,11 +1011,46 @@
       <option name="project" value="LOCAL" />
       <updated>1480687802282</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="2draft-test 1 with branch review and commentssad">
+      <created>1480688162683</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1480688162683</updated>
+    </task>
+    <task id="LOCAL-00039" summary="2draft-test 1 with branch review and commentssad">
+      <created>1480688504910</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1480688504910</updated>
+    </task>
+    <task id="LOCAL-00040" summary="sadfasaf">
+      <created>1480688594213</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1480688594213</updated>
+    </task>
+    <task id="LOCAL-00041" summary="draft4">
+      <created>1480688687137</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1480688687137</updated>
+    </task>
+    <task id="LOCAL-00042" summary="draft4 -1">
+      <created>1480688702762</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1480688702762</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22622000" />
+    <option name="totallyTimeSpent" value="24281000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1035,16 +1082,16 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3246124" sideWeight="0.30235043" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32267442" sideWeight="0.5779914" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32267442" sideWeight="0.42681623" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32267442" sideWeight="0.42200854" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17788461" sideWeight="0.6720648" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Reviews" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3246124" sideWeight="0.6976496" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Reviews" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3246124" sideWeight="0.6923077" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="News Feed" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1122,9 +1169,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="E" />
-    <MESSAGE value="initial commit" />
-    <MESSAGE value="change1" />
     <MESSAGE value="change2" />
     <MESSAGE value="comments" />
     <MESSAGE value="10 syms" />
@@ -1147,7 +1191,10 @@
     <MESSAGE value="draft-test 6 no review" />
     <MESSAGE value="2draft-test 1 with branch review and comments" />
     <MESSAGE value="2draft-test 1 with branch review and commentssad" />
-    <option name="LAST_COMMIT_MESSAGE" value="2draft-test 1 with branch review and commentssad" />
+    <MESSAGE value="sadfasaf" />
+    <MESSAGE value="draft4" />
+    <MESSAGE value="draft4 -1" />
+    <option name="LAST_COMMIT_MESSAGE" value="draft4 -1" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1159,22 +1206,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_maven/src/main/java/net/example/test_maven/HelloWorldApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Quicksort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1539,6 +1570,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draft4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draft-test5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
           <folding />
         </state>
       </provider>
