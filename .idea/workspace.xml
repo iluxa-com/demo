@@ -150,8 +150,8 @@
       <file leaf-file-name="branch draft2.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/branch draft2.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            <state relative-caret-position="272">
+              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -176,7 +176,29 @@
   </component>
   <component name="GhostReviewsManagerService">
     <projectManager projectId="demo">
-      <reviews />
+      <reviews>
+        <review id="1" title="2draft-test 1 with branch review and commentssad" state="OPEN" branch="false">
+          <participant-list />
+          <uncommitted-revisions-part>
+            <revision-list>
+              <revision revisionNumber="e9e0a8bab658dfff343696f15f744e51d8ef2d4d" author="iluxa-com" fullAuthorString="iluxa-com &lt;ilya.komolkin@jetbrains.com&gt;" commitTime="1480688162000" authorTime="1480688162000" commitMessage="2draft-test 1 with branch review and commentssad" vcsRootUrl="file://$PROJECT_DIR$" />
+            </revision-list>
+            <branch-list>
+              <branch name="draft-test3" local-rev-id="e9e0a8bab658 1480688162000" />
+            </branch-list>
+          </uncommitted-revisions-part>
+          <discussions-list>
+            <discussion>
+              <comments_list>
+                <comment>
+                  <text>review draft comment</text>
+                  <date>1480688262266</date>
+                </comment>
+              </comments_list>
+            </discussion>
+          </discussions-list>
+        </review>
+      </reviews>
       <uncommitted-review-parts />
     </projectManager>
   </component>
@@ -738,7 +760,7 @@
       <workItem from="1449567362653" duration="660000" />
       <workItem from="1480680074299" duration="4744000" />
       <workItem from="1480687132878" duration="32000" />
-      <workItem from="1480687259950" duration="748000" />
+      <workItem from="1480687259950" duration="1089000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1339172743829</created>
@@ -999,11 +1021,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480687802282</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="2draft-test 1 with branch review and commentssad">
+      <created>1480688162683</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1480688162683</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22622000" />
+    <option name="totallyTimeSpent" value="22963000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1070,6 +1099,19 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="UncommittedDiscussionsManager">
+    <discussions_list path="branch draft2.txt">
+      <discussion>
+        <range start="425" end="428" />
+        <comments_list>
+          <comment>
+            <text>comment draft</text>
+            <date>1480688249168</date>
+          </comment>
+        </comments_list>
+      </discussion>
+    </discussions_list>
   </component>
   <component name="UncommittedReviewsManager">
     <reviews />
@@ -1537,8 +1579,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/branch draft2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state relative-caret-position="272">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding />
         </state>
       </provider>
