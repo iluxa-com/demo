@@ -6,3 +6,5 @@ Could you please test how it works now?
 I will investigate a root reason but it looks like it's a one more bug in Cassandra.
 
 fsad
+sdf
+sadf
