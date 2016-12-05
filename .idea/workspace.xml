@@ -24,9 +24,10 @@
   </component>
   <component name="ChangeListManager">
     <list id="336dc758-5505-4f73-89ff-77ebbc4b24cc" name="Default" comment="XXX" />
-    <list default="true" id="ab9aec04-4f4f-440f-8da8-0162c207bc04" name="Ignore" comment="draft 3">
+    <list default="true" id="ab9aec04-4f4f-440f-8da8-0162c207bc04" name="Ignore" comment="drafts 8">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/draft9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drafts-8.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/draft-7" afterPath="$PROJECT_DIR$/draft-7" />
     </list>
     <ignored path="demoProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -157,7 +158,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="draft-7" pinned="false" current-in-tab="true">
+      <file leaf-file-name="draft-7" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/draft-7">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -167,11 +168,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloWorldApp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_maven/src/main/java/net/example/test_maven/HelloWorldApp.java">
+      <file leaf-file-name="drafts-8.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/drafts-8.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+            <state relative-caret-position="51">
+              <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="draft9" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/draft9">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -186,7 +197,41 @@
   </component>
   <component name="GhostReviewsManagerService">
     <projectManager projectId="demo">
-      <reviews />
+      <reviews>
+        <review id="1" title="drafts 8" state="OPEN" branch="false">
+          <participant-list />
+          <uncommitted-revisions-part>
+            <revision-list>
+              <revision revisionNumber="6f71e4f28d27d11fb407ab012491c7d12c418f23" author="iluxa-com" fullAuthorString="iluxa-com &lt;ilya.komolkin@jetbrains.com&gt;" commitTime="1480938461000" authorTime="1480938461000" commitMessage="drafts 8" vcsRootUrl="file://$PROJECT_DIR$" />
+            </revision-list>
+            <branch-list>
+              <branch name="drafts-8" local-rev-id="6f71e4f28d27 1480938461000" />
+            </branch-list>
+          </uncommitted-revisions-part>
+          <discussions-list>
+            <discussion>
+              <comments_list>
+                <comment>
+                  <text>review comment draft</text>
+                  <date>1480938500930</date>
+                </comment>
+                <comment>
+                  <text>relpy1</text>
+                  <date>1480938731579</date>
+                </comment>
+              </comments_list>
+            </discussion>
+            <discussion>
+              <comments_list>
+                <comment>
+                  <text>+1</text>
+                  <date>1480938724381</date>
+                </comment>
+              </comments_list>
+            </discussion>
+          </discussions-list>
+        </review>
+      </reviews>
       <uncommitted-review-parts />
     </projectManager>
   </component>
@@ -196,7 +241,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="draft-test5" />
+        <entry key="$PROJECT_DIR$" value="drafts-8" />
       </map>
     </option>
   </component>
@@ -221,6 +266,8 @@
         <option value="$PROJECT_DIR$/draft-test5.txt" />
         <option value="$PROJECT_DIR$/branch draft2.txt" />
         <option value="$PROJECT_DIR$/draft-7" />
+        <option value="$PROJECT_DIR$/drafts-8.txt" />
+        <option value="$PROJECT_DIR$/draft9" />
       </list>
     </option>
   </component>
@@ -266,8 +313,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -282,6 +327,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -305,7 +352,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="upsource.project.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="UPSOURCE_REVIEWS_QUERY" value="" />
   </component>
@@ -755,56 +802,9 @@
       <workItem from="1480692025174" duration="658000" />
       <workItem from="1480692704520" duration="748000" />
       <workItem from="1480693479696" duration="906000" />
-      <workItem from="1480694417340" duration="40000" />
-    </task>
-    <task id="LOCAL-00004" summary="D">
-      <created>1339172987137</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1339172987137</updated>
-    </task>
-    <task id="LOCAL-00005" summary="E">
-      <created>1339173137969</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1339173137969</updated>
-    </task>
-    <task id="LOCAL-00006" summary="initial commit">
-      <created>1340204336392</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1340204336392</updated>
-    </task>
-    <task id="LOCAL-00007" summary="change1">
-      <created>1340205441911</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1340205441911</updated>
-    </task>
-    <task id="LOCAL-00008" summary="change2">
-      <created>1340205670510</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1340205670510</updated>
-    </task>
-    <task id="LOCAL-00009" summary="comments">
-      <created>1369417572524</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1369417572524</updated>
-    </task>
-    <task id="LOCAL-00010" summary="10 syms">
-      <created>1369418032693</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1369418032693</updated>
+      <workItem from="1480694417340" duration="354000" />
+      <workItem from="1480694792870" duration="961000" />
+      <workItem from="1480937154917" duration="1637000" />
     </task>
     <task id="LOCAL-00011" summary="XXX">
       <created>1369426769866</created>
@@ -1100,11 +1100,60 @@
       <option name="project" value="LOCAL" />
       <updated>1480694426361</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="draft 3">
+      <created>1480694460821</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1480694460821</updated>
+    </task>
+    <task id="LOCAL-00054" summary="draft 3">
+      <created>1480694553344</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1480694553344</updated>
+    </task>
+    <task id="LOCAL-00055" summary="draft 3">
+      <created>1480694701743</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1480694701743</updated>
+    </task>
+    <task id="LOCAL-00056" summary="draft 3">
+      <created>1480694896623</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1480694896624</updated>
+    </task>
+    <task id="LOCAL-00057" summary="drafts 8">
+      <created>1480938138472</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1480938138473</updated>
+    </task>
+    <task id="LOCAL-00058" summary="drafts 8">
+      <created>1480938205253</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1480938205253</updated>
+    </task>
+    <task id="LOCAL-00059" summary="drafts 8">
+      <created>1480938461115</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1480938461115</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26657000" />
+    <option name="totallyTimeSpent" value="29569000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1136,19 +1185,19 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3246124" sideWeight="0.3344017" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32267442" sideWeight="0.5956197" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32267442" sideWeight="0.4139957" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32267442" sideWeight="0.40438035" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18482906" sideWeight="0.6720648" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Reviews" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3246124" sideWeight="0.6655983" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18910256" sideWeight="0.6720648" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Reviews" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3246124" sideWeight="0.6442308" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="News Feed" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="News Feed" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1223,7 +1272,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="New changelist" />
     <MESSAGE value="files" />
     <MESSAGE value="some comments added" />
     <MESSAGE value="jdk 1.7" />
@@ -1248,7 +1296,8 @@
     <MESSAGE value="draft7 -1" />
     <MESSAGE value="draft7 -2" />
     <MESSAGE value="draft 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="draft 3" />
+    <MESSAGE value="drafts 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="drafts 8" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1260,22 +1309,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_maven/src/main/java/net/example/test_maven/HelloWorldApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Quicksort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1632,6 +1665,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drafts-8.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draft9">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
           <folding />
         </state>
       </provider>
