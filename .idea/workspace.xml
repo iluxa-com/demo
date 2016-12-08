@@ -24,7 +24,7 @@
   </component>
   <component name="ChangeListManager">
     <list id="336dc758-5505-4f73-89ff-77ebbc4b24cc" name="Default" comment="XXX" />
-    <list default="true" id="ab9aec04-4f4f-440f-8da8-0162c207bc04" name="Ignore" comment="idea commit 118&#10;">
+    <list default="true" id="ab9aec04-4f4f-440f-8da8-0162c207bc04" name="Ignore" comment="idea commit 20&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/drafts111.txt" afterPath="$PROJECT_DIR$/drafts111.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.WDF" afterPath="$PROJECT_DIR$/test.WDF" />
@@ -131,8 +131,8 @@
       <file leaf-file-name="drafts111.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/drafts111.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+            <state relative-caret-position="340">
+              <caret line="20" column="2" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -151,9 +151,12 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="186" column="17" lean-forward="false" selection-start-line="186" selection-start-column="17" selection-end-line="186" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="257">
+              <caret line="187" column="17" lean-forward="false" selection-start-line="187" selection-start-column="17" selection-end-line="187" selection-end-column="17" />
+              <folding>
+                <marker date="1481199004098" expanded="true" signature="70637:70679" ph="..." />
+                <marker date="1481199004098" expanded="true" signature="70637:70710" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -616,7 +619,7 @@
       <workItem from="1449567362653" duration="660000" />
       <workItem from="1481129405749" duration="157000" />
       <workItem from="1481129565963" duration="164000" />
-      <workItem from="1481129733745" duration="3819000" />
+      <workItem from="1481129733745" duration="3845000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1339172743829</created>
@@ -814,11 +817,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481196965033</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="idea commit 20&#10;">
+      <created>1481199024005</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1481199024005</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21238000" />
+    <option name="totallyTimeSpent" value="21264000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -960,7 +970,8 @@
     <MESSAGE value="idea commit 11 &#10;" />
     <MESSAGE value="idea commit 118&#10;" />
     <MESSAGE value="idea commit 19&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea commit 19&#10;" />
+    <MESSAGE value="idea commit 20&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea commit 20&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1354,16 +1365,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="186" column="17" lean-forward="false" selection-start-line="186" selection-start-column="17" selection-end-line="186" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="257">
+          <caret line="187" column="17" lean-forward="false" selection-start-line="187" selection-start-column="17" selection-end-line="187" selection-end-column="17" />
+          <folding>
+            <marker date="1481199004098" expanded="true" signature="70637:70679" ph="..." />
+            <marker date="1481199004098" expanded="true" signature="70637:70710" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/drafts111.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        <state relative-caret-position="340">
+          <caret line="20" column="2" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
           <folding />
         </state>
       </provider>
