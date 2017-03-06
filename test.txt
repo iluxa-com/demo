@@ -5,12 +5,6 @@ sadf
 123
 AS
 sdfa
-sda
-312
-asdf
-blah
-йцу
-111
-222
+
 333
 qwe
