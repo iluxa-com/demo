@@ -1,5 +1,5 @@
 # DesignPatternsPHP
-[:notebook:]
+:notebook:
 ^)
 ;)
 :/
