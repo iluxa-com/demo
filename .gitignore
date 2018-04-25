@@ -1,0 +1,7 @@
+.idea
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/workspace.xml
+.idea/dictionaries/*
+.idea/shelf
+.idea/libraries/sass_stdlib.xml
