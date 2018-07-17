@@ -1,0 +1,26 @@
+test
+sadf
+Up-23110000
+00000
+234
+\ русский текст
+sadf
+
+123
+0000000000
+
+asdfafsadf
+sadfdsadf
+
+
+asdd
+sadf
+
+new_branch1
+
+
+qewr
+sadfsdfg
+00
+
+changed in another branch
