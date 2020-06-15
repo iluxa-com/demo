@@ -9,6 +9,7 @@ public class Quicksort  {
     if (values ==null || values.length==0){
       return;
     }
+    
     this.numbers = values;
     number = values.length;
     quicksort(0, number - 1);
